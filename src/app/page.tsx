@@ -1,9 +1,8 @@
-import MenuTree from "../components/MenuTree";
+export default function HomePage() {
+    return (
+        <div>
+            <h1 className="text-2xl font-bold">Welcome to Dashboard</h1>
 
-export default function Home() {
-  return (
-    <div>
-      <MenuTree />
-    </div>
-  );
+        </div>
+    );
 }

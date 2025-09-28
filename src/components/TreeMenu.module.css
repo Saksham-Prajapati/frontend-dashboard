@@ -1,0 +1,159 @@
+.treeMenu {
+    padding: 20px;
+    font-family: Inter, Arial, sans-serif;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.treeMenu h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+.treeNode {
+    margin-left: 16px;
+}
+
+.treeNodeContent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.treeNodeContent:hover {
+    background: #f3f4f6;
+}
+
+.expandButton {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    color: #374151;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.expandButton:hover {
+    background: #e5e7eb;
+}
+
+.addButton,
+.editButton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.addButton:hover {
+    background: #2563eb;
+}
+
+.editButton {
+    background: #10b981;
+}
+
+.editButton:hover {
+    background: #059669;
+}
+
+.editInput {
+    border: 1px solid #d1d5db;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    flex: 1;
+}
+
+.editInput:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.nodeName {
+    font-weight: 500;
+    color: #374151;
+    flex: 1;
+}
+
+.treeChildren {
+    margin-left: 18px;
+    border-left: 1px dashed #d1d5db;
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal h3 {
+    margin: 0 0 10px 0;
+}
+
+.modal input {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.saveButton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background: #e5e7eb;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
